@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "LienHe";
+    Layout = "~/Views/Shared/_LayoutLienHe.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta property="fb:app_id" content="APP ID" />
+    <meta property="fb:admins" content="USER ID" />
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <div class="contact_info" style="text-align:center">
+        <div class="title3"><span style="font-weight:bold;font-size:20px">Quán Trà Sữa Vợ Nấu</span></div>
+        <div class="width100">
+            <div class="line_info_contact">
+                GPKD số 699696 do sở Kế hoạch Đầu tư TPHCM cấp ngày 2/5/2018
+            </div>
+            <div class="line_info_contact">
+                <b>Địa chỉ:</b> 133 Thoại Ngọc Hầu, Phường Phú Thạnh, Tp.HCM
+            </div>
+            <div class="line_info_contact">
+                <b>Giờ Mở Cửa:</b> 8h-22h
+            </div>
+            <div class="line_info_contact">
+                <b>Điện thoại:</b> <a href="tel:0968646534">0968646534</a>
+            </div>
+            <div class="line_info_contact">
+                <b>Hotline:</b><a href="tel:0968646534">0968646534</a>
+            </div>
+            <div class="line_info_contact">
+                <b>Email:</b><a class="emailbc" href="mailto:danhkun@gmail.com">trasuavonau@gmail.com</a>
+            </div>
+            <div class="line_info_contact">
+                <b>Facebook:</b><a class="facebook" href="https://www.facebook.com/Tr%C3%A0-S%E1%BB%AFa-3AE-375737949611313/"> Trà Sữa Vợ Nấu</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <h1 style="text-align:center;font-size:17px;font-weight:bold">Ý kiến của bạn là động lực cho chúng tôi! Xin chân thành cám ơn!</h1>
+    <!--nhúng comment Facebook-->
+    <div class="wrap" style="text-align:center">
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '2011239709195903',
+                    xfbml: true,
+                    version: 'v2.12'
+                });
+                FB.AppEvents.logPageView();
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&appId=2011239709195903&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-comments" data-width="900" data-numposts="5"></div>
+
+        <div class="fb-like"
+             data-share="true"
+             data-width="450"
+             data-show-faces="true">
+        </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <!--nhúng comment Facebook-->
+
+
+
+    <hr />
+    <div id="map" style="position: relative; overflow: hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.393884665948!2d106.63040664965818!3d10.7811142317933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea5e3309549%3A0x22baa3dd556c3371!2zMTMzIFRob-G6oWkgTmfhu41jIEjhuqd1LCBIw7JhIFRo4bqhbmgsIFTDom4gUGjDuiwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1754380061711!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> width="1428" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
