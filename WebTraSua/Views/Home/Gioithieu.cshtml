@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Giới Thiệu";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<!-- Banner toàn màn hình -->
+<div class="banner-gioithieu">
+    <div>
+        <h1>Trà Sữa Vợ Nấu</h1>
+        <p>Ngọt ngào – Đậm vị – Hạnh phúc trong từng ly</p>
+    </div>
+</div>
+<div class="noidung-trasua">
+    <h2>Trà Sữa</h2>
+    <p>
+        Trà sữa là loại thức uống đa dạng được tìm thấy ở nhiều nền văn hóa, bao gồm nhiều cách kết hợp giữa trà và sữa.
+        Các loại thức uống khác nhau tùy thuộc vào lượng thành phần chính, phương pháp pha chế, và các nguyên liệu khác
+        (từ đường, mật ong cho đến muối hoặc thảo quả). Ngoài ra, bột trà sữa pha sẵn cũng được sản xuất hàng loạt từ
+        nhiều nguồn sữa động vật khác nhau.
+    </p>
+
+    <h3>Các biến tấu phổ biến</h3>
+    <ul>
+        <li><b>Trà sữa trân châu (Đài Loan / Boba):</b> Xuất hiện tại Đài Trung (1980s), pha từ trà và thêm hạt trân châu đen dẻo, ngọt.</li>
+        <li><b>Trà sữa Hồng Kông:</b> Trà đen pha với sữa đặc không đường, có nguồn gốc từ thời thuộc địa Anh.</li>
+        <li><b>Doodh pati chai:</b> Trà sữa truyền thống tại Nepal, Pakistan, Ấn Độ và Bangladesh.</li>
+        <li><b>Teh tarik:</b> Trà sữa “kéo” nổi tiếng tại Malaysia và Singapore.</li>
+        <li><b>Trà sữa Mông Cổ (Suutei tsai):</b> Loại trà sữa mặn của người Mông Cổ.</li>
+        <li><b>Shahi haleeb:</b> Trà sữa Yemen, thường dùng sau khi nhai qat.</li>
+        <li><b>Masala chai:</b> Trà sữa gia vị của tiểu lục địa Ấn Độ.</li>
+        <li><b>Irani chai:</b> Trà sữa Ấn Độ pha cùng sữa nguyên chất và mawa.</li>
+        <li><b>Trà Thái:</b> Trà sữa ngọt đặc trưng ở Đông Nam Á.</li>
+        <li><b>Trà sữa Hoàng gia Nhật Bản:</b> Trà được nấu trực tiếp trong sữa.</li>
+        <li><b>Trà với sữa (Anh Quốc):</b> Khác biệt với “trà sữa”; chỉ đơn thuần là trà nóng uống kèm sữa lạnh.</li>
+    </ul>
+</div>
+<div>   
+<style>
+    .noidung-trasua {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px 30px;
+        background: #fffdf7;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+        .noidung-trasua h2 {
+            text-align: center;
+            color: #d63384;
+            margin-bottom: 15px;
+        }
+
+        .noidung-trasua h3 {
+            margin-top: 25px;
+            color: #ff6f00;
+        }
+
+        .noidung-trasua ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .noidung-trasua li {
+            margin-bottom: 10px;
+        }
+</style>
+</div>
+<!-- Nội dung giới thiệu -->
+<div class="gioithieu-content fade-in-section">
+    <h2>Giới Thiệu</h2>
+    <p>
+        Chào mừng bạn đến với <strong>Trà Sữa Vợ Nấu!</strong><br />
+        Chúng tôi chuyên phục vụ các loại trà sữa thơm ngon, chất lượng với giá cả hợp lý.<br />
+        📍 Địa chỉ: <b>133 Thoại Ngọc Hầu, Phường Phú Thạnh, Quận Tân Phú, Tp.HCM</b><br />
+        ☕ Hân hạnh được phục vụ quý khách!
+    </p>
+</div>
+
+<style>
+    /* Banner nền toàn màn hình */
+    .banner-gioithieu {
+        background:@Url.Action("~/images/logo_Webtrasu.png") no-repeat center center;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    .banner-overlay {
+        background: rgba(0,0,0,0.5);
+        padding: 30px 50px;
+        border-radius: 12px;
+    }
+
+        .banner-overlay h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #ffd700;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1.2s ease forwards;
+        }
+
+        .banner-overlay p {
+            font-size: 20px;
+            color: #f8f9fa;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1.5s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+    /* Nội dung */
+    .gioithieu-content {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 1s ease;
+    }
+
+        .gioithieu-content h2 {
+            font-size: 28px;
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        .gioithieu-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Khi scroll thì hiện ra */
+        .gioithieu-content.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
+
+<script>
+    // Hiệu ứng scroll: hiện nội dung khi trượt xuống
+    document.addEventListener("scroll", function () {
+        let content = document.querySelector(".gioithieu-content");
+        let rect = content.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            content.classList.add("show");
+        }
+    });
+</script>
